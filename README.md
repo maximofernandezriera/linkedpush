@@ -5,7 +5,9 @@ Crear dos funciones para manejar listas enlazadas:
 
 push(head, data): Añade un nodo con data al inicio de la lista.
 
-buildOneTwoThree(): Construye y retorna la lista 1 -> 2 -> 3.
+buildOneTwoThree(): Construye y retorna la lista.
+
+## 1 -> 2 -> 3 -> null
 
 Explicación detallada:
 
