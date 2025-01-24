@@ -72,3 +72,34 @@ Errores comunes:
 Orden incorrecto: Si usas push(1), luego push(2), obtendrías 2 -> 1 -> 3.
 
 Olvidar retornar el nuevo nodo en push().
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Solución del kata: 
+
+- https://www.codewars.com/kata/55be95786abade3c71000079
+
+                  class Node {
+                  
+                    int data;
+                    Node next = null;
+                    
+                    Node(final int data) {
+                      this.data = data;
+                    }
+                    
+                    public static Node push(final Node head, final int data) {
+                      Node newNode = new Node(data);
+                      newNode.next = head;
+                          return newNode;
+                    }
+                    
+                    public static Node buildOneTwoThree() {
+                        Node head = null;
+                        head = push(head, 3);
+                        head = push(head, 2);
+                        head = push(head, 1);
+                        return head;
+                    }
+                  }
